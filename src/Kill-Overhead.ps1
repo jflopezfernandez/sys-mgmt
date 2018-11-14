@@ -1,6 +1,9 @@
 
-Write-Host "[Initiating Kill-Overhead Script...]"
+$UselessServicesThatExistForNoReasonOtherThanToAnnoyUsAll = @(
+    "Print Spooler",
+    "Maps Manager",
+    "MozillaMaintenance",
+    "MySQL80"
+)
 
-# Do the things
-
-Write-Host "[Terminating...]"
+$UselessServicesThatExistForNoReasonOtherThanToAnnoyUsAll | Write-Host
